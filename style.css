@@ -1,0 +1,240 @@
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Segoe UI, sans-serif;
+	line-height: 1.6;
+	background: #f8f8f8;
+	color: #333;
+}
+header {
+	background: #FF2452;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 85%;
+	margin: auto;
+	padding: 1rem 0;
+} 
+.logo {
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.nav-links {
+	display: flex;
+	list-style: none;
+	font-weight: bold;
+}
+.nav-links li {
+	margin-left: 20px;
+	font-size: 16px;
+}
+.nav-links a {
+	text-decoration: none;
+	color: #fff;
+	transition: color 0.3s ease-in-out;
+}
+.nav-links a:hover {
+	color: black;
+	transition: color 1.3s;
+}
+.menu-toggle {
+	display: none;
+	font-size: 1.8rem;
+	color: white;
+	cursor: pointer;
+}
+.hero {
+	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('image/hero.jpg') no-repeat center/cover;
+	color: white;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 0 20px;
+}
+.hero-content {
+	animation: fadeUp 1.5s ease;
+}
+.btn {
+	display: incline-block;
+	margin-top: 20px;
+	padding: 12px 25px;
+	background: crimson;
+	color: white;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: transform 0.3s;
+}
+.btn:hover {
+	transform: scale(1.05);
+	background-color: orange;
+	transition: 0.3s ease;
+}
+section {
+	padding: 4rem 10%;
+}
+.about-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+.about-card {
+	flex: 1;
+	min-width: 250px;
+	background: white;
+	padding: 1.5rem;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+	transition: transform 0.3s;
+}
+.about-card:hover {
+	transform: translateY(-5px);
+}
+#about h2 {
+    font-size: 2.2rem;
+    color: crimson;
+    text-align: center;
+    margin-top: 2rem;
+}	
+#about h3 {
+	font-size: 1.4rem;
+	color: #222;
+	margin-top: 1.8rem;
+	margin-bottom: 0.5rem;
+	position: relative;
+	padding-left: 10px;
+	border-left: 4px solid crimson;
+	transition: all 0.3s ease-in-out;
+}
+/* Hover effect on subheadings */
+#about h3:hover {
+	color: crimson;
+	border-left: 4px solid #222;
+}
+/* paragraph styling */
+#about p {
+	margin-bottom: 1rem;
+	line-height: 1.6;
+	color: #555;
+}
+/* List styling for values */
+#about ul {
+	margin-left: 1.5rem;
+	margin-bottom: 1rem;
+}
+#about ul li {
+	margin-bottom: 0.5rem;
+	position: relative;
+	padding-left: 20px;
+	color: #555;
+}
+/* Fade-in animation when scrolling */
+#about.fade-in.show h3 {
+	animation: fadeSlide o.8s ease-in-out;
+}
+.service-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+.service-card {
+	flex: 1;
+	min-width: 250px;
+	background: white;
+	padding: 1.5rem;
+    border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+	transition: transform 0.3s;
+}
+.service-card:hover {
+	transform: translateY(-5px);
+}
+#services h2 {
+	font-size: 2.2rem;
+	color: crimson;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+#services h3 {
+	font-size: 1.4rem;
+	color: #222;
+	margin-top: 1.8rem;
+	margin-bottom: 0.5rem;
+	position: relative;
+	padding-left: 10px;
+	border-left: 4px solid crimson;
+	transition: all 0.3s ease-in-out;
+}
+/* Hover effect on subheadings */
+#services h3:hover {
+	color: crimson;
+	border-left: 4px solid #222;
+}
+.location-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+.service-card {
+	flex: 1;
+	min-width: 250px;
+	background: white;
+	padding: 1.5rem;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+	transition: transform 0.3s;
+}
+.service-card:hover {
+	transform: translateY(-5px);
+}
+#Location h3 {
+	font-size: 1.4rem;
+	color: #222;
+	margin-top: 1.8rem;
+	margin-bottom: 0.5rem;
+	position: relative;
+	padding-left: 10px;
+	border-left: 4px solid crimson;
+	transition: all 0.3s ease-in-out;
+}
+#Location h3:hover {
+    color: crimson;
+    border-left: 4px solid #222;	
+}
+#contact form {
+	margin: auto;
+	display: flex;
+    gap: 15px;	
+}
+#contact input {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+}
+#contact textarea {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+}
+#contact button:hover {
+	background-color: #e6004f;
+}
+footer {
+    background: #FF2452;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+	
